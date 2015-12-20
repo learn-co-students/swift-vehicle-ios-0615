@@ -38,6 +38,6 @@ class Vehicle {
     func halt()             {speed = 0}
     func accelerate()       {speed += (0.1 * maxSpeed)}
     func decelerate()       {speed -= (0.1 * maxSpeed)}
-    func turnRight()        {if speed > 0 {heading += 90}}
-    func turnLeft()         {if speed > 0 {heading -= 90}}
+    func turnRight()        {if speed > 0 {heading += 90; speed *= 0.5}}
+    func turnLeft()         {if speed > 0 {heading -= 90; speed *= 0.5}}
 }
