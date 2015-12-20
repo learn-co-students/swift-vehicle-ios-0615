@@ -10,18 +10,18 @@ import Foundation
 
 class RaceCar:Car {
     let driver:String
-    var sponsers:[String]
+    var sponsors:[String]
     
-    init(name: String, weight: Double, maxSpeed: Double, transmission: String, cylinders: Int, milesPerGallon: Double, driver:String, sponsers:[String]) {
+    init(name: String, weight: Double, maxSpeed: Double, transmission: String, cylinders: Int, milesPerGallon: Double, driver:String, sponsors:[String]) {
         self.driver = driver
-        self.sponsers = sponsers
+        self.sponsors = sponsors
         
         super.init(name: name, weight: weight, maxSpeed: maxSpeed, transmission: transmission, cylinders: cylinders, milesPerGallon: milesPerGallon)
     }
     
-    override func accelerate() {speed += (0.2 * maxSpeed)}
-    override func decelerate() {speed -= (0.2 * maxSpeed)}
+    override func accelerate() {speed += (0.2 * maxSpeed); speedCheck()}
+    override func decelerate() {speed -= (0.2 * maxSpeed); speedCheck()}
     
-    func driftRight() {heading += 90; speed *= 0.75}
-    func driftLeft() {heading -= 90; speed *= 0.75}
+    func driftRight() {if speed > 0 {heading += 90; speed *= 0.75} ;headingCheck()}
+    func driftLeft() {if speed > 0 {heading -= 90; speed *= 0.75} ;headingCheck()}
 }

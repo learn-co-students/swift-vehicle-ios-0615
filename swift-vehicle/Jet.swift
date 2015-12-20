@@ -10,12 +10,13 @@ import Foundation
 
 class Jet:Plane {
     var isAfterburning:Bool = false
-    override var speed:Double {
-        didSet {
-            if speed < 0        {speed = 0}
-            if speed > maxSpeed && !isAfterburning {speed = maxSpeed}
-        }
-    }
+//    override var speed:Double {
+//        didSet {
+//            if speed < 0        {speed = 0}
+//            if speed > maxSpeed && !isAfterburning {speed = maxSpeed}
+//            else if isAfterburning {
+//        }
+//    }
     
     override func climb()   {if inFlight {altitude += (0.2 * maxAltitude); decelerate()}}
     override func dive()    {if inFlight {altitude -= (0.2 * maxAltitude); accelerate()}}
