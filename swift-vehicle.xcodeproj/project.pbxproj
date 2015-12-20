@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3818E7951C273A9C0033665E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3818E7941C273A9C0033665E /* Vehicle.swift */; };
+		3818E7971C273E6B0033665E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3818E7961C273E6B0033665E /* Car.swift */; };
 		4D7E0C941BFD340300A15C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0C931BFD340300A15C54 /* AppDelegate.swift */; };
 		4D7E0C961BFD340300A15C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0C951BFD340300A15C54 /* ViewController.swift */; };
 		4D7E0C991BFD340300A15C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E0C971BFD340300A15C54 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		3818E7941C273A9C0033665E /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3818E7961C273E6B0033665E /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		45BA0D521C8782ECAEAF3B22 /* Pods-swift-vehicleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-vehicleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-vehicleTests/Pods-swift-vehicleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D7E0C901BFD340300A15C54 /* swift-vehicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-vehicle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7E0C931BFD340300A15C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				4D7E0C931BFD340300A15C54 /* AppDelegate.swift */,
 				4D7E0CB31BFD34C900A15C54 /* Resources */,
 				3818E7941C273A9C0033665E /* Vehicle.swift */,
+				3818E7961C273E6B0033665E /* Car.swift */,
 			);
 			path = "swift-vehicle";
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				3818E7951C273A9C0033665E /* Vehicle.swift in Sources */,
 				4D7E0C961BFD340300A15C54 /* ViewController.swift in Sources */,
+				3818E7971C273E6B0033665E /* Car.swift in Sources */,
 				4D7E0C941BFD340300A15C54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
